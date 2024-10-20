@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BeatSaberMarkupLanguage;
 using BeatSaberMarkupLanguage.MenuButtons;
+
 using UnityEngine;
 
 namespace SoundReplacer
@@ -27,7 +28,7 @@ namespace SoundReplacer
             GameObject.DontDestroyOnLoad(this);
             Instance = this;
 
-            MenuButtons.instance.RegisterButton(new MenuButton("SoundReplacer", "Setup SoundReplacer here!", MenuButtonPressed, true));
+            MenuButtons.Instance.RegisterButton(new MenuButton("SoundReplacer", "Setup SoundReplacer here!", MenuButtonPressed, true));
         }
 
         private void OnDestroy()
